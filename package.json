@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel-node app.js --out-dir build",
     "dev-start": "babel-watch app.js",
-    "start": "nodemon --exec babel-node app.js",
+    "start": "babel-node app.js",
     "lint": "./node_modules/.bin/eslint app.js",
     "test:cover": "cross-env NODE_ENV=test nyc npm test",
     "test": "cross-env NODE_ENV=test nyc --require @babel/register --require @babel/polyfill mocha --timeout 5000 --exit",
