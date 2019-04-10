@@ -4,10 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "babel-node app.js --out-dir build",
-    "dev-start": "babel-watch app.js",
-    "start": "babel-node app.js",
-    "lint": "./node_modules/.bin/eslint app.js",
+    "build": "npm run clean && babel server/ -d build",
+    "clean": "rm -rf build && mkdir build",
+    "start": "npm run build && node build/app.js",
+    "lint": "./server/node_modules/.bin/eslint app.js",
     "test:cover": "cross-env NODE_ENV=test nyc npm test",
     "test": "cross-env NODE_ENV=test nyc --require @babel/register --require @babel/polyfill mocha --timeout 5000 --exit",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-lcov mocha --exit"
