@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && babel server/ -d build",
     "clean": "rm -rf build && mkdir build",
-    "start": "node build/app.js",
+    "start": "npm run build && node build/app.js",
     "lint": "./server/node_modules/.bin/eslint app.js",
     "test:cover": "cross-env NODE_ENV=test nyc npm test",
     "test": "cross-env NODE_ENV=test nyc --require @babel/register --require @babel/polyfill mocha --timeout 5000 --exit",
