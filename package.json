@@ -14,12 +14,12 @@
   },
   "nyc": {
     "require": [
-      "@babel/register", "@babel/polyfill"
+      "@babel/register",
+      "@babel/polyfill"
     ],
     "sourceMap": false,
     "instrument": false
   },
-  
   "author": "",
   "license": "ISC",
   "devDependencies": {
