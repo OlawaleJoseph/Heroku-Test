@@ -7,6 +7,11 @@ exports.default = void 0;
 
 var _bcrypt = _interopRequireDefault(require("bcrypt"));
 
+<<<<<<< HEAD
+require("@babel/polyfill");
+
+=======
+>>>>>>> fa2f0f65a6b8a5e38b42d1f5e74d14683e9df901
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
