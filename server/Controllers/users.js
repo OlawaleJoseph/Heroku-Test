@@ -78,11 +78,18 @@ router.post('/auth/reset', async (req, res) => {
 });
 
 router.get('/', (req, res) => {
-  const users = userModel.getAllUsers();
+  if(req.user.isAdmin){
+    const users = userModel.getAllUsers();
   res.status(200).json({
     "status": 200,
     "data": users
   });
+  }else{
+    res.status(403).json({
+      "status": 403,
+      "data": "You don not have the access to view this page"
+    });
+  }
 });
 
 router.get('/auth/me', validateToken, (req, res) => {
