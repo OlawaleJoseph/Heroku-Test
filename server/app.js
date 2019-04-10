@@ -1,4 +1,5 @@
 import express from 'express';
+import '@babel/polyfill';
 import userRouter from './Controllers/users';
 import accountRouter from './Controllers/account';
 import transactionRouter from './Controllers/transaction';

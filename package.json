@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "10.13.0"
+  },
   "scripts": {
     "build": "npm run clean && babel server/ -d build",
     "clean": "rm -rf build && mkdir build",

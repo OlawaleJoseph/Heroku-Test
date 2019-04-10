@@ -2,6 +2,11 @@
 
 var _express = _interopRequireDefault(require("express"));
 
+<<<<<<< HEAD
+=======
+require("@babel/polyfill");
+
+>>>>>>> fa2f0f65a6b8a5e38b42d1f5e74d14683e9df901
 var _users = _interopRequireDefault(require("./Controllers/users"));
 
 var _account = _interopRequireDefault(require("./Controllers/account"));
