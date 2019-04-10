@@ -15,5 +15,5 @@ app.use('/api/v1/transactions', validateToken, transactionRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`App is istening on Port ${port}`);
+  console.log(`App is listening on Port ${port}`);
 });
